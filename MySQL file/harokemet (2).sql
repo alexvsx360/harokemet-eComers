@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Sep 02, 2020 at 06:05 PM
+-- Generation Time: Sep 02, 2020 at 06:16 PM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -87,13 +87,6 @@ CREATE TABLE `massages` (
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `massages`
---
-
-INSERT INTO `massages` (`id`, `name`, `email`, `massage`, `updated_at`, `created_at`) VALUES
-(3, 'Anna', 'annasokol026@gmail.com', 'hellow world!!', '2019-11-24 14:14:48', '2019-11-24 14:14:48');
-
 -- --------------------------------------------------------
 
 --
@@ -137,25 +130,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `order_data`, `total`, `updated_at`, `created_at`, `ship_number`) VALUES
-(1, 3, 'a:2:{i:7;a:6:{s:2:\"id\";s:1:\"7\";s:4:\"name\";s:6:\"wolv 1\";s:5:\"price\";d:500;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:9:\"wolv1.jpg\";}s:10:\"conditions\";a:0:{}}i:8;a:6:{s:2:\"id\";s:1:\"8\";s:4:\"name\";s:6:\"wolv 2\";s:5:\"price\";d:600;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:9:\"wolv2.jpg\";}s:10:\"conditions\";a:0:{}}}', 1100, '2019-10-23 09:36:47', '2019-10-23 09:36:47', '231243'),
-(2, 3, 'a:2:{i:1;a:6:{s:2:\"id\";s:1:\"1\";s:4:\"name\";s:5:\"pug 1\";s:5:\"price\";d:500;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:8:\"pug1.jpg\";}s:10:\"conditions\";a:0:{}}i:2;a:6:{s:2:\"id\";s:1:\"2\";s:4:\"name\";s:5:\"pug 2\";s:5:\"price\";d:600;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:8:\"pug2.jpg\";}s:10:\"conditions\";a:0:{}}}', 1100, '2019-10-23 09:37:19', '2019-10-23 09:37:19', NULL),
-(3, 3, 'a:1:{i:2;a:6:{s:2:\"id\";s:1:\"2\";s:4:\"name\";s:5:\"pug 2\";s:5:\"price\";d:600;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:8:\"pug2.jpg\";}s:10:\"conditions\";a:0:{}}}', 600, '2019-10-23 15:07:18', '2019-10-23 15:07:18', '4336'),
-(4, 3, 'a:1:{i:32;a:6:{s:2:\"id\";s:2:\"32\";s:4:\"name\";s:13:\"sherlock-sexy\";s:5:\"price\";d:1000000000;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:14:\"sherlock2.jpeg\";}s:10:\"conditions\";a:0:{}}}', 1000000000, '2019-10-23 17:04:25', '2019-10-23 17:04:25', NULL),
-(5, 3, 'a:1:{i:1;a:6:{s:2:\"id\";s:1:\"1\";s:4:\"name\";s:5:\"pug 1\";s:5:\"price\";d:500;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:8:\"pug1.jpg\";}s:10:\"conditions\";a:0:{}}}', 500, '2019-11-13 18:24:01', '2019-10-24 17:26:33', '4567'),
-(6, 3, 'a:1:{i:35;a:6:{s:2:\"id\";s:2:\"35\";s:4:\"name\";s:8:\"Brooche2\";s:5:\"price\";d:500;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:12:\"brooche2.jpg\";}s:10:\"conditions\";a:0:{}}}', 500, '2019-11-13 18:37:05', '2019-10-31 19:00:08', '55555'),
-(7, 3, 'a:1:{i:37;a:6:{s:2:\"id\";s:2:\"37\";s:4:\"name\";s:11:\"Wall Decor2\";s:5:\"price\";d:500;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:15:\"wall_decor2.jpg\";}s:10:\"conditions\";a:0:{}}}', 500, '2019-11-13 18:54:59', '2019-10-31 19:04:39', '456789'),
-(10, 3, 'a:1:{i:48;a:6:{s:2:\"id\";s:2:\"48\";s:4:\"name\";s:11:\"cristmass 2\";s:5:\"price\";d:34;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:42:\"2019-11-17-07-29-44-category christmas.png\";}s:10:\"conditions\";a:0:{}}}', 34, '2019-11-18 13:45:02', '2019-11-18 13:45:02', NULL),
-(11, 15, 'a:1:{i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:9:\"cristmass\";s:5:\"price\";d:35;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:41:\"2019-11-17-07-29-14-heading christmas.png\";}s:10:\"conditions\";a:0:{}}}', 35, '2019-11-18 13:48:28', '2019-11-18 13:48:28', NULL),
-(12, 15, 'a:1:{i:44;a:6:{s:2:\"id\";s:2:\"44\";s:4:\"name\";s:9:\"Bee broch\";s:5:\"price\";d:30;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:45:\"2019-11-09-02-07-11-bee with eyes product.png\";}s:10:\"conditions\";a:0:{}}}', 30, '2019-11-23 13:37:05', '2019-11-18 13:54:44', '1241'),
-(13, 15, 'a:1:{i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:9:\"cristmass\";s:5:\"price\";d:35;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:41:\"2019-11-17-07-29-14-heading christmas.png\";}s:10:\"conditions\";a:0:{}}}', 35, '2019-11-18 14:14:45', '2019-11-18 14:14:45', NULL),
-(14, 15, 'a:1:{i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:9:\"cristmass\";s:5:\"price\";d:35;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:41:\"2019-11-17-07-29-14-heading christmas.png\";}s:10:\"conditions\";a:0:{}}}', 35, '2019-11-18 15:48:35', '2019-11-18 15:48:35', NULL),
-(15, 15, 'a:1:{i:44;a:6:{s:2:\"id\";s:2:\"44\";s:4:\"name\";s:9:\"Bee broch\";s:5:\"price\";d:30;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:45:\"2019-11-09-02-07-11-bee with eyes product.png\";}s:10:\"conditions\";a:0:{}}}', 30, '2019-11-18 15:49:14', '2019-11-18 15:49:14', NULL),
-(16, 16, 'a:1:{i:45;a:6:{s:2:\"id\";s:2:\"45\";s:4:\"name\";s:16:\"Blue fish Brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:41:\"2019-11-09-02-20-35-blue fish product.png\";}s:10:\"conditions\";a:0:{}}}', 28, '2019-12-08 18:44:56', '2019-11-18 17:45:08', '23454'),
-(17, 16, 'a:1:{i:46;a:6:{s:2:\"id\";s:2:\"46\";s:4:\"name\";s:16:\"Dragonfly brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:46:\"2019-11-09-02-50-45-gold dragonfly product.png\";}s:10:\"conditions\";a:0:{}}}', 28, '2019-11-27 19:11:24', '2019-11-18 18:22:51', '23423'),
-(18, 17, 'a:1:{i:46;a:6:{s:2:\"id\";s:2:\"46\";s:4:\"name\";s:16:\"Dragonfly brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:46:\"2019-11-09-02-50-45-gold dragonfly product.png\";}s:10:\"conditions\";a:0:{}}}', 28, '2019-11-24 14:14:01', '2019-11-18 18:32:28', '412'),
-(19, 3, 'a:1:{i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:9:\"cristmass\";s:5:\"price\";d:35;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:41:\"2019-11-17-07-29-14-heading christmas.png\";}s:10:\"conditions\";a:0:{}}}', 35, '2019-11-18 20:43:56', '2019-11-18 20:43:56', NULL),
-(20, 3, 'a:6:{i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:23:\"Christmas tree ornament\";s:5:\"price\";d:28;s:8:\"quantity\";i:4;s:10:\"attributes\";a:1:{s:5:\"image\";s:47:\"2019-11-19-04-56-36-product orange ornament.png\";}s:10:\"conditions\";a:0:{}}i:44;a:6:{s:2:\"id\";s:2:\"44\";s:4:\"name\";s:9:\"Bee broch\";s:5:\"price\";d:30;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:45:\"2019-11-09-02-07-11-bee with eyes product.png\";}s:10:\"conditions\";a:0:{}}i:50;a:6:{s:2:\"id\";s:2:\"50\";s:4:\"name\";s:17:\"Green leaf brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:57:\"2019-11-19-04-05-20-green cristal leaf brooch product.png\";}s:10:\"conditions\";a:0:{}}i:46;a:6:{s:2:\"id\";s:2:\"46\";s:4:\"name\";s:16:\"Dragonfly brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:46:\"2019-11-09-02-50-45-gold dragonfly product.png\";}s:10:\"conditions\";a:0:{}}i:45;a:6:{s:2:\"id\";s:2:\"45\";s:4:\"name\";s:16:\"Blue fish Brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:41:\"2019-11-09-02-20-35-blue fish product.png\";}s:10:\"conditions\";a:0:{}}i:49;a:6:{s:2:\"id\";s:2:\"49\";s:4:\"name\";s:18:\"fall leaf earrings\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:52:\"2019-11-19-03-51-40-orange leaf earrings product.png\";}s:10:\"conditions\";a:0:{}}}', 254, '2019-11-23 15:19:55', '2019-11-23 15:19:55', NULL),
-(21, 18, 'a:2:{i:50;a:6:{s:2:\"id\";s:2:\"50\";s:4:\"name\";s:17:\"Green leaf brooch\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:57:\"2019-11-19-04-05-20-green cristal leaf brooch product.png\";}s:10:\"conditions\";a:0:{}}i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:23:\"Christmas tree ornament\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:47:\"2019-11-19-04-56-36-product orange ornament.png\";}s:10:\"conditions\";a:0:{}}}', 56, '2019-11-23 18:14:34', '2019-11-23 17:58:10', '432');
+(22, 19, 'a:1:{i:47;a:6:{s:2:\"id\";s:2:\"47\";s:4:\"name\";s:23:\"Christmas tree ornament\";s:5:\"price\";d:28;s:8:\"quantity\";i:1;s:10:\"attributes\";a:1:{s:5:\"image\";s:47:\"2019-11-19-04-56-36-product orange ornament.png\";}s:10:\"conditions\";a:0:{}}}', 28, '2020-09-02 18:15:33', '2020-09-02 18:14:40', 'asdfgfh');
 
 -- --------------------------------------------------------
 
@@ -240,7 +215,7 @@ CREATE TABLE `users_datas` (
 --
 
 INSERT INTO `users_datas` (`id`, `user_id`, `first_name`, `last_name`, `phone`, `address`, `country`, `state`, `zip`, `created_at`, `updated_at`) VALUES
-(10, 19, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-09-02 21:02:30', '2020-09-02 21:02:30');
+(10, 19, 'user', 'user', 54505450545, 'user street', 'Israel', 'None', '098765', '2020-09-02 21:02:30', '2020-09-02 21:02:30');
 
 -- --------------------------------------------------------
 
@@ -355,7 +330,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `products`
