@@ -4,8 +4,10 @@
 <div class="container">
     <header class="home-header parallax">
         <div class="header-content dark text-center">
-            <h1 class="header-title mb-0 text-dark">Harokemet</h1>
-            <p class="inner-space mb-0 text-dark">Harokrmet Shop</p>
+            <h1 class="header-title mb-0 text-dark" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+            1px 1px 0 white">Harokemet</h1>
+            <p class="inner-space mb-0 text-dark" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+            1px 1px 0 white">Harokrmet Shop</p>
         </div><!-- / header-content -->
     </header>
 </div><!-- / container -->

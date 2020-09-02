@@ -10,9 +10,11 @@ $menu =App\Menu::all()->toArray();
     <header class=" parallax" style="background-image: url('img/dinco.jpg');">
         <div class="header-content dark text-center">
             @foreach($contents as $content) <p>
-                <h1 class="header-title mb-0 text-dark">{{ $page_title }}</h1>
+                <h1 class="header-title mb-0 text-dark" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+                1px 1px 0 white">{{ $page_title }}</h1>
             </p> @endforeach
-            <p class="inner-space mb-0 text-dark">Harokrmet Shop</p>
+            <p class="inner-space mb-0 text-dark" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+            1px 1px 0 white">Harokrmet Shop</p>
         </div><!-- / header-content -->
     </header>
     @foreach($contents as $content)

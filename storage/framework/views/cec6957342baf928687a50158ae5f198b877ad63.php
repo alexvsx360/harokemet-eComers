@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col text-center mt-5 mb-5 modal-title">
             <h1 class="text-dark">Here Your can Signup whit your account.</h1>
+            <p>Default admin >> email: user@gmail.com, pass: 123456</p>
 
         </div>
     </div>

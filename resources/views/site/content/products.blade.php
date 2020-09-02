@@ -5,8 +5,10 @@
 
     <header class=" parallax" style="background-image: url('{{asset('img/'.$products[0]->cimage)}}');">
         <div class="header-content dark text-center">
-            <h1 class="header-title mb-0 text-dark"> {{ $page_title }} </h1>
-            <p class="inner-space mb-0 text-dark">Harokemet Shop Products</p>
+            <h1 class="header-title mb-0 text-dark" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+            1px 1px 0 white"> {{ $page_title }} </h1>
+            <p class="inner-space mb-0 text-dark" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+            1px 1px 0 white">Harokemet Shop Products</p>
         </div><!-- / header-content -->
     </header>
     <section id="gallery" class="p-0 line-effect">
